@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: #fff;
+  font-size: 1em;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  padding: 1em 2.5em;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s;
+  font-size: 1em;
+  margin-right: 20px;
+}
+
+nav a.active,
+nav a:hover {
+  color: #fbc531;
+}
+
+.registro-container {
+  max-width: 25em;
+  margin: 1em auto;
+  padding: 2em;
+  background: #1e1e1e;
+  border-radius: 0.8em;
+  box-shadow: 0em 0.25em 0.9em rgba(251, 197, 49, 0.6);
+  text-align: center;
+}
+
+.registro-container h2 {
+  margin-bottom: 1.2em;
+  color: #fbc531;
+  font-size: 1.3em;
+}
+
+.registro-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.registro-form label {
+  text-align: left;
+  font-size: 0.9em;
+  color: #ccc;
+}
+
+.registro-form input {
+  padding: 0.6em;
+  border: none;
+  border-radius: 0.4em;
+  background: #2c2c2c;
+  color: #fff;
+  outline: none;
+  font-size: 1em;
+}
+
+.registro-form input:focus {
+  border: 0.06em solid #fbc531;
+}
+
+button {
+  background: #fbc531;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5em;
+  padding: 0.8em;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 1em;
+}
+
+button:hover {
+  background: #000;
+  color: #fbc531;
+}
