@@ -1,37 +1,146 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/Inicio.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/29c8f9ca0d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <title>Takeyourpopcorn</title>
 </head>
+
 <body>
+    <!--CABEZA-->
     <header>
         <div class="contenedor">
             <img src="../IMG/Takeyourpopcorn-strikingly-logo-2025-08-19/logo-light-transparent.png" alt="Logo de la plataforma">
             <nav>
                 <a href="Inicio.html" class="activo">Inicio</a>
-                <a href="Series.html">Series</a>
-                <a href="Peliculas.html">Peliculas</a>
+                <a href="series">Series</a>
+                <a href="peliculas">Peliculas</a>
                 <a href="Mi lista">Mi lista</a>
             </nav>
         </div>
-    </header>
+        <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+        <nav id="main-nav">
+            <ul>
+                <li> <a href="AQUI VA EL LINK A INICIO">Inicio</a></li>
+                <li> <a href="AQUI VA EL LINK A PELICULAS">Películas</a></li>
+                <li> <a href="AQUI VA EL LINK A SERIES">Series</a></li>
+                <li> <a href="AQUI VA EL LINK A MI LISTA ">Mi lista</a></li>
+            </ul>
+        </nav>
 
-    <main>
-        <div class="pelicula-principal">
-            <div class="contenedor">
-                <h3 class="titulo">Demon Slayer: Infinity Casttle</h3>
-                <p class="descripcion">The Demon Slayer Corps are drawn into the Infinity Castle, where Tanjiro, Nezuko, and the Hashira face terrifying Upper Rank demons in a desperate fight as the final battle against Muzan Kibutsuji begins.</p>
+    </header>
+    <!--SLIDER-->
+    <section class="slider">
+        <div class="slide active" style="background-image: url('../IMG/Peliculas/Kimetsu/1.jpg');">
+            <div class="content">
+                <h2>Título 1</h2>
                 <button role="button" class="boton"><i class="fa-solid fa-circle-play"></i>Reproducir</button>
                 <button role="button" class="boton"><i class="fa-solid fa-circle-question"></i>Mas Informacion</button>
             </div>
         </div>
 
+        <div class="slide" style="background-image: url('../IMG/Peliculas/Kimetsu/2.jpg');">
+            <div class="content">
+                <h2>Título 2</h2>
+                <button role="button" class="boton"><i class="fa-solid fa-circle-play"></i>Reproducir</button>
+                <button role="button" class="boton"><i class="fa-solid fa-circle-question"></i>Mas Informacion</button>
+
+            </div>
+        </div>
+
+        <div class="slide" style="background-image: url('../IMG/Peliculas/Kimetsu/1.jpg');">
+            <div class="content">
+                <h2>Título 3</h2>
+                <button role="button" class="boton"><i class="fa-solid fa-circle-play"></i>Reproducir</button>
+                <button role="button" class="boton"><i class="fa-solid fa-circle-question"></i>Mas Informacion</button>
+            </div>
+        </div>
+        <div class="indicators">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+    <!--SECCIONES DE CONTENIDO-->
+
+
+    <section class="content-section">
+        <!--DESTACADAS-->
+        <h2>Destacadas</h2>
+        <div class="carrusel">
+            <button class="btn prev">&#10094;</button> <!-- Botón retroceder -->
+            <div class="contenedor-carrusel">
+                <div class="movie">
+                    <img src="../IMG/Peliculas/Kimetsu/1.jpg" alt="Película 1">
+                    <h3>Título Película 1</h3>
+                </div>
+                <div class="movie">
+                    <img src="../IMG/Peliculas/Kimetsu/2.jpg" alt="Película 2">
+                    <h3>Título Película 2</h3>
+                </div>
+                <div class="movie">
+                    <img src="../IMG/Peliculas/Kimetsu/1.jpg" alt="Película 3">
+                    <h3>Título Película 3</h3>
+                </div>
+                <div class="movie">
+                    <img src="../IMG/Peliculas/Kimetsu/1.jpg" alt="Película 3">
+                    <h3>Título Película 4</h3>
+                </div>
+                <div class="movie">
+                    <img src="../IMG/Peliculas/Kimetsu/2.jpg" alt="Película 3">
+                    <h3>Título Película 5</h3>
+                </div>
+                <div class="movie">
+                    <img src="../IMG/Peliculas/Kimetsu/1.jpg" alt="Película 3">
+                    <h3>Título Película 6</h3>
+                </div>
+            </div>
+            <button class="btn next">&#10095;</button> <!-- Botón avanzar -->
+        </div>
+        <!--SERIES-->
+        <h2>Series</h2>
+        <div class="carrusel">
+            <button class="btn prev">&#10094;</button>
+            <div class="contenedor-carrusel">
+                <div class="movie">
+                    <img src="../IMG/Series/1.jpg" alt="Serie 1">
+                    <h3>Título Serie 1</h3>
+                </div>
+                <div class="movie">
+                    <img src="../IMG/Series/2.jpg" alt="Serie 2">
+                    <h3>Título Serie 2</h3>
+                </div>
+                <div class="movie">
+                    <img src="../IMG/Series/3.jpg" alt="Serie 3">
+                    <h3>Título Serie 3</h3>
+                </div>
+                <div class="movie">
+                    <img src="../IMG/Series/4.jpg" alt="Serie 4">
+                    <h3>Título Serie 4</h3>
+                </div>
+                <div class="movie">
+                    <img src="../IMG/Series/5.jpg" alt="Serie 5">
+                    <h3>Título Serie 5</h3>
+                </div>
+            </div>
+            <button class="btn next">&#10095;</button>
+        </div>
+        <!--PEGA AQUI ADENTRO SI QUIERES AÑADIR MAS-->
+
+    </section>
+
+
+
+
+
+
+
+
+    <script src="../JS/Inicio.js"></script>
 </body>
+
 </html>
